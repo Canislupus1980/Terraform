@@ -1,2 +1,2 @@
 # Terraform
-terraform code for AWS
+terraform code CICD for AWS
