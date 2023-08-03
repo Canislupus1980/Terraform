@@ -1,44 +1,16 @@
 variable "region" {
-  type    = string
-  default = "eu-central-1"
-}
-
-variable "az_1" {
-  type    = string
-  default = "eu-central-1a"
-}
-
-variable "az_2" {
-  type    = string
-  default = "eu-central-1b"
-}
-
-variable "ami_id" {
-  type = map(any)
-  default = {
-    ap-southeast-1 = "ami-0615132a0f36d24f4"
-  }
+  description = "Region in which resources will be provisioned"
+  type        = string
+  default     = "eu-central-1"
 }
 
 variable "instance_type" {
-  type    = string
-  default = "t2.micro"
+  description = "EC2 Instance Type"
+  type        = string
+  default     = "t3.micro"
 }
-
-variable "tf_state_bucket" {
-  type = string
-}
-
-variable "tf_state_key" {
-  type = string
-}
-
-variable "jenkins_tf_tags" {
-  type    = string
-  default = "my-jenkins"
-}
-
-variable "domain" {
-  type    = string
-  default = "work.online"
+variable "instance_keypair" {
+  description = "AWS EC2 Key pair that need to be associated with EC2 Instance"
+  type        = string
+  default     = "mydevops"
 }
