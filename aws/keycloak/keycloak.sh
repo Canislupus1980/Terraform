@@ -92,14 +92,14 @@ upstream keycloak_backend {
 }
 server {    
     listen 80;
-    server_name keycloak.jfrog.shop;
+    server_name keycloak.domen.com;
     location / {
         return 301 https://\$host\$request_uri;
     }
 }
 server {
     listen 443 ssl;
-    server_name keycloak.jfrog.shop;
+    server_name keycloak.domen.com;
     ssl_certificate /etc/nginx/certs/cert.crt;
     ssl_certificate_key /etc/nginx/certs/cert.key;
           proxy_set_header X-Forwarded-For \$proxy_protocol_addr;
