@@ -14,7 +14,7 @@ sudo touch /etc/nginx/sites-available/jfrog
 sudo bash -c 'sudo cat <<EOT> /etc/nginx/sites-available/jfrog
 server{
     listen      80;
-    server_name jfrog.shop;
+    server_name jfrog.domen;
     access_log  /var/log/nginx/jfrog.access.log;
     error_log   /var/log/nginx/jfrog.error.log;
     proxy_buffers 16 64k;
