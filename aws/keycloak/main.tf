@@ -15,7 +15,7 @@ resource "aws_instance" "keycloak" {
 }
 
 data "aws_route53_zone" "selected" {
-  name         = "jfrog.shop"
+  name         = "domen.com"
   private_zone = false
 }
 
