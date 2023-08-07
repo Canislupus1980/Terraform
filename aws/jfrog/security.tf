@@ -12,7 +12,7 @@ resource "aws_security_group" "ec2" {
 
   ingress {
     cidr_blocks = ["0.0.0.0/0"]
-    description = "HTTP1"
+    description = "HTTP"
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
