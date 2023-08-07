@@ -6,6 +6,6 @@ variable "region" {
 
 variable "domainName" {
   description = "Domain name of the application"
-  default     = "jfrog.shop"
+  default     = "domen.com"
   type        = string
 }
