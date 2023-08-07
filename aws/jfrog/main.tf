@@ -16,12 +16,12 @@ resource "aws_instance" "jfrog" {
 
 
 data "aws_route53_zone" "selected" {
-  name         = "jfrog.shop"
+  name         = "domen.com"
   private_zone = false
 }
 
 resource "aws_route53_record" "domainName" {
-  name    = ""
+  name    = "jfrog"
   type    = "A"
   zone_id = data.aws_route53_zone.selected.zone_id
   records = [aws_instance.jfrog.public_ip]
