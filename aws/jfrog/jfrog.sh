@@ -1,6 +1,7 @@
 #!/bin/sh
 #Update Ubuntu OS
 sudo apt update && sudo apt-get upgrade -y
+sudo apt install git -y && sudo apt-get install docker-compose-plugin -y
 #Download Artifactory 
 wget -O artifactory-pro.deb "https://releases.jfrog.io/artifactory/artifactory-pro-debs/pool/jfrog-artifactory-pro/jfrog-artifactory-pro-7.63.9.deb"
 #Install Artifactory
